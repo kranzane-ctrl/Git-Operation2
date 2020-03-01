@@ -12,11 +12,11 @@
 
 	<form:form modelAttribute="emp" method="POST" action="/review">
 		<table>
-			<tr>
+<%-- 			<tr>
 				<td>Id
 				<td><form:input type="number" path="id" />
 			</tr>
-
+ --%>
 			<tr>
 				<td>Name
 				<td><form:input type="text" path="name" />
