@@ -40,5 +40,7 @@
 		</tr>
 
 	</table>
+	<br><br>
+	<a href="/welcome">go to welcome page</a>
 </body>
 </html>
