@@ -1,23 +1,6 @@
-Welcome Page Load
-Welcome Page Load
-02-Mar-2020 04:13:16 YEKT [http-nio-8787-exec-1] com.app.controller.EmployeeController loadWelcomePage - Welcome Page Load 34 
-02-Mar-2020 04:28:08 YEKT [http-nio-8787-exec-1] com.app.controller.EmployeeController loadWelcomePage - Welcome Page to Load 32 
-02-Mar-2020 04:28:13 YEKT [http-nio-8787-exec-2] com.app.controller.EmployeeController loadLoginPage - Open to Registration Page 40 
-02-Mar-2020 04:28:23 YEKT [http-nio-8787-exec-4] com.app.controller.EmployeeController reviewData - Data bind by @ModelAttributive to save 51 
-02-Mar-2020 04:28:23 YEKT [http-nio-8787-exec-4] com.app.controller.EmployeeController reviewData - data saved to DB 54 
-02-Mar-2020 04:28:23 YEKT [http-nio-8787-exec-4] com.app.service.EmployeeService saveEntity - data copy to pojo to entity to save in database  29 
-02-Mar-2020 04:28:23 YEKT [http-nio-8787-exec-4] com.app.service.EmployeeService saveEntity - data copyed successfully  31 
-02-Mar-2020 04:28:23 YEKT [http-nio-8787-exec-4] com.app.service.EmployeeService saveEntity - data saved to DB 33 
-02-Mar-2020 04:28:23 YEKT [http-nio-8787-exec-4] com.app.controller.EmployeeController reviewData - Data Successfully Saved to Database 57 
-02-Mar-2020 04:29:14 YEKT [http-nio-8787-exec-5] com.app.controller.EmployeeController loadWelcomePage - Welcome Page to Load 32 
-02-Mar-2020 04:29:17 YEKT [http-nio-8787-exec-6] com.app.controller.EmployeeController loadLoginPage - Open to Registration Page 40 
-02-Mar-2020 04:29:21 YEKT [http-nio-8787-exec-7] com.app.controller.EmployeeController reviewData - Data bind by @ModelAttributive to save 51 
-02-Mar-2020 04:29:21 YEKT [http-nio-8787-exec-7] com.app.controller.EmployeeController reviewData - data saved to DB 54 
-02-Mar-2020 04:29:21 YEKT [http-nio-8787-exec-7] com.app.service.EmployeeService saveEntity - data copy to pojo to entity to save in database  29 
-02-Mar-2020 04:29:21 YEKT [http-nio-8787-exec-7] com.app.service.EmployeeService saveEntity - data copyed successfully  31 
-02-Mar-2020 04:29:21 YEKT [http-nio-8787-exec-7] com.app.service.EmployeeService saveEntity - data saved to DB 33 
-02-Mar-2020 04:29:21 YEKT [http-nio-8787-exec-7] com.app.controller.EmployeeController reviewData - Data Successfully Saved to Database 57 
-02-Mar-2020 04:29:31 YEKT [http-nio-8787-exec-9] com.app.controller.EmployeeController loadWelcomePage - Welcome Page to Load 32 
-02-Mar-2020 04:29:38 YEKT [http-nio-8787-exec-10] com.app.controller.EmployeeController findById - findDataById to Load 66 
-02-Mar-2020 04:29:46 YEKT [http-nio-8787-exec-1] com.app.service.EmployeeService findById - findById call 39 
-02-Mar-2020 04:29:46 YEKT [http-nio-8787-exec-1] com.app.service.EmployeeService findById - finfById data Found successfully 49 
+02-Mar-2020 07:00:58 YEKT [main] com.app.GitOperation2ApplicationTests testFindById - Creating Entity 39 
+02-Mar-2020 07:00:58 YEKT [main] com.app.GitOperation2ApplicationTests testFindById - Set entity values 41 
+02-Mar-2020 07:00:58 YEKT [main] com.app.GitOperation2ApplicationTests testFindById - Execute to test Case 47 
+02-Mar-2020 07:04:46 YEKT [main] com.app.GitOperation2ApplicationTests testFindById - Creating Entity 41 
+02-Mar-2020 07:04:46 YEKT [main] com.app.GitOperation2ApplicationTests testFindById - Set entity values 43 
+02-Mar-2020 07:04:46 YEKT [main] com.app.GitOperation2ApplicationTests testFindById - Execute to test Case 49 

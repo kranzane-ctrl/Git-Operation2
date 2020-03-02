@@ -40,6 +40,8 @@
 		</table>
 		<input type="submit" value="Submit Form"/>
 	</form:form>
+	<br><br>
+	<a href="/welcome">go to welcome page</a>
 	
 </body>
 </html>
