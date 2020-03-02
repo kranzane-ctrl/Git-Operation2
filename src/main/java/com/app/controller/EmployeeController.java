@@ -17,6 +17,10 @@ import com.app.exception.CustomerNotFoundException;
 import com.app.pojo.Employee;
 import com.app.service.EmployeeService;
 
+/**
+ * @author Kishor R
+ *
+ */
 @RestController
 //@RequestMapping(value = "/")
 public class EmployeeController {
@@ -24,16 +28,24 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService service;
 	
+	// create logger object
 	private static Logger log=Logger.getLogger(EmployeeController.class);
 	
+	/**
+	 * @return 
+	 */
 	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
 	public ModelAndView loadWelcomePage() {
+		// initializing logger by properties
 		PropertyConfigurator.configure(System.getProperty("user.dir")+ File.separator + "log4j.properties");
 		log.info("Welcome Page to Load");
 		ModelAndView mav=new ModelAndView("welcome");
 		return mav;
 	}
 	
+	/**
+	 * @return
+	 */
 	@RequestMapping(value = "/registration" , method = RequestMethod.GET)
 	public ModelAndView loadLoginPage() {
 		PropertyConfigurator.configure(System.getProperty("user.dir")+ File.separator + "log4j.properties");
@@ -45,6 +57,10 @@ public class EmployeeController {
 		return mav;
 	}
 	
+	/**
+	 * @param emp
+	 * @return
+	 */
 	@RequestMapping(value = "/review", method = RequestMethod.POST)
 	public ModelAndView reviewData(@ModelAttribute("emp") Employee emp) {
 		PropertyConfigurator.configure(System.getProperty("user.dir")+ File.separator + "log4j.properties");
@@ -60,6 +76,10 @@ public class EmployeeController {
 		return mav;
 	}
 	
+	
+	/**
+	 * @return
+	 */
 	@RequestMapping(value = "/findById", method = RequestMethod.GET)
 	public ModelAndView findById() {
 		PropertyConfigurator.configure(System.getProperty("user.dir")+ File.separator + "log4j.properties");
@@ -69,6 +89,11 @@ public class EmployeeController {
 		return mav;
 	}
 	
+	/**
+	 * @param id
+	 * @return
+	 * @throws CustomerNotFoundException
+	 */
 	@RequestMapping(value = "/findDataById", method = RequestMethod.GET)
 	public ModelAndView findDataById(@RequestParam("id") int id) throws CustomerNotFoundException {
 		EmployeeEntity entity=service.findById(id);

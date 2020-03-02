@@ -8,6 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+/**
+ * @author Kishor R
+ *
+ */
 @Entity
 @Table(name = "EMPLOYEE_GIT_TBL")
 @SequenceGenerator(name = "EMPLOYEE_GIT_SEQ", initialValue =1, allocationSize = 1) 
@@ -30,10 +34,20 @@ public class EmployeeEntity {
 	@Column(name = "PHONE")
 	private Long phone;
 
+	/**
+	 * 
+	 */
 	public EmployeeEntity() {
 		super();
 	}
 
+	/**
+	 * @param id
+	 * @param name
+	 * @param city
+	 * @param clg
+	 * @param phone
+	 */
 	public EmployeeEntity(int id, String name, String city, String clg, Long phone) {
 		super();
 		this.id = id;
@@ -83,6 +97,9 @@ public class EmployeeEntity {
 		this.phone = phone;
 	}
 
+	/**
+	 *
+	 */
 	@Override
 	public String toString() {
 		return "EmployeeEntity [id=" + id + ", name=" + name + ", city=" + city + ", clg=" + clg + ", phone=" + phone

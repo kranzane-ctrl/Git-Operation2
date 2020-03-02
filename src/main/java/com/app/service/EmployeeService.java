@@ -13,6 +13,10 @@ import com.app.entity.EmployeeEntity;
 import com.app.exception.CustomerNotFoundException;
 import com.app.pojo.Employee;
 
+/**
+ * @author Kishor R
+ *
+ */
 @Service
 public class EmployeeService {
 
@@ -21,6 +25,10 @@ public class EmployeeService {
 
 	private static Logger log=Logger.getLogger(EmployeeService.class);
 	
+	/**
+	 * @param employee
+	 * @return
+	 */
 	public EmployeeEntity saveEntity(Employee employee) {
 		PropertyConfigurator.configure(System.getProperty("user.dir")+ File.separator + "log4j.properties");
 		
@@ -34,6 +42,11 @@ public class EmployeeService {
 		return savedEntity;
 	}
 
+	/**
+	 * @param id
+	 * @return
+	 * @throws CustomerNotFoundException
+	 */
 	public EmployeeEntity findById(int id) throws CustomerNotFoundException {
 		PropertyConfigurator.configure(System.getProperty("user.dir")+ File.separator + "log4j.properties");
 		log.info("findById call");
